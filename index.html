@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
+        <div class="container">
         <!--upper part of site-->
-        <a class="header-link" href="./index.html">WebStudio</a>
+        <div class="website-name">
+        <a class="header-link" href="./index.html"> <span>Web</span>Studio </a>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -36,18 +42,25 @@
                     <a class="header-link" href="tel:+380961111111">+380961111111</a>
                 </li>
             </ul>
-        
+        </div>
     </header>
 
-    <main class="main-title">
+    <main>
         <!--first section-->
-        <section>
+        <section class="main-title">
+            
             <h1>Эффективные решения для вашего бизнеса</h1>
+            <div class="button-first">
             <button type="button">Заказать услугу</button>
+            </div>
+            
         </section>
 
         <!--description section-->
         <section>
+
+            <div class="container-first">
+
             <ul>
                 <li>
                     <h3>внимание к детялям</h3>
@@ -66,10 +79,12 @@
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!--pictures section-->
         <section>
+            <div class="container-second">
             <h2>Чем мы занимаемся</h2>
 
             <ul>
@@ -83,10 +98,13 @@
                     <img src="./images/pic3.jpg" alt="pic3" width="370" />
                 </li>
             </ul>
+            </div>
         </section>
 
         <!--our team section-->
         <section>
+
+            <div class="container-second">
             <h2>Наша команда</h2>
 
             <ul>
@@ -111,16 +129,21 @@
                     <p>UI Designer</p>
                 </li>
             </ul>
-
+            </div>
         </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="darkFontFirst">
+        <div class="container">
         <!--copyright from header-->
-        <a href="./index.html">WebStudio</a>
+        <div class="website-name">
+        <a href="./index.html"><span>Web</span>Studio</a>
+        </div>
+        </div>
 
         <adress>
+            <div class="container-adress">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
 
@@ -131,6 +154,7 @@
                     <a class="header-link" href="tel:+380961111111">+38096 111 11 11</a>
                 </li>
             </ul>
+            </div>
         </adress>
     </footer>
 </body>
