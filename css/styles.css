@@ -1,10 +1,20 @@
+:root {
+  --accent-color: var(--accent-color) #2196f3;
+  --main-colour: #212121;
+  --second-colour: #757575;
+  --main-title-color: #ffffff;
+  --button-color: #ffffff;
+  --p-color: #757575;
+  --adress-color: #ffffff;
+
+}
+
 /*універсальний селектор */
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-
 }
 
 span {
@@ -14,21 +24,18 @@ span {
 .website-name {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  Line height: 30,52px;
-
+  line-height: 1.1;
 }
 
 .header-link {
   color: black;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: #2196f3;
-}
-:root {
-  --accent-color: var(--accent-color) #2196f3;
 }
 
 /* selector of tag ul and a*/
@@ -55,8 +62,8 @@ a {
   left: 0px;
   top: 1628px;
 }
-section {
-  background: #e5e5e5;
+/*section {
+  background: #e5e5e5;*/
 }
 
 page-header {
@@ -69,12 +76,11 @@ section {
 .main-title {
   background-color: #2f303a;
   font-family: Roboto;
-  font-Weight: 900;
-  font-Style: normal;
+  font-weight: 900;
+  font-style: normal;
   font-size: 44px;
-  line-height: 60px;
-  color: #FFFFFF;
-
+  line-height: 1.3;
+  color: var(--main-title-color) ;
 }
 
 .container {
@@ -82,91 +88,127 @@ section {
   margin: 0 auto;
 }
 
-h1,
+/*h1,
 h3 {
   text-transform: uppercase;
-}
+}*/
 
-.container a{
+.navlist a {
   font-family: Roboto;
-  font-Weight: 500;
-  font-Style: normal;
   font-size: 14px;
-  line-height: 16,41px;
- 
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--main-colour);
 }
 
-.button-first {
+.button-first button {
   font-family: Roboto;
-  font-Weight: 700;
-  font-Style: normal;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
-  line-height: 30px;
-  color: #FFFFFF;
+  line-height: 1.8;
+  color: var(--button-color);
 }
 
-.container-first h3{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
+.container-first h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--main-colour);
 }
-.container-first p{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;}
+.container-first p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--second-colour);
+}
 
-.container-second h2{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;}
+.container-second h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-colour);
+}
 
-.container-second h3{
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;}
+.container-third h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-colour);
+}
 
-.container-second p{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #757575;}
+.container-third h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-colour);
+}
+
+.container-third p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--p-color);
+}
 
 .container-adress {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: #FFFFFF;}
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
 
-.container-buttons {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;}
+.container-adress li {
+  color: var(-adress-color);
+}
+
+.website-name-footer {
+  color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.container-buttons li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--main-colour);
+}
 
 .container-proj h3 {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 36px;}
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-colour);
+}
 
-.container-proj p{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 30px;
-color: #757575;}
+.container-proj p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--second-colour);
+}
