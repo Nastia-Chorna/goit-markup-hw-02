@@ -11,14 +11,22 @@
 
 /*універсальний селектор */
 
-* {
+/** {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px;}*/
+
 
 span {
   color: #2196f3;
+}
+.main-title{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  margin-bottom: 94px;
+
 }
 
 .main-title h1{
@@ -67,24 +75,57 @@ line-height: 1.1;
   color: #2196f3;
 }
 
-.button-change {
-  color: var(--main-colour);
-  font-family: inherit;
-  background-color: var(--accent-color);
+.container-buttons li {
+  display: inline-block;
+  font-family: Roboto;
   font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--main-colour);
+  background-color: #F5F4FA;
+  border-radius: 4px; 
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+ }
+
+.container-buttons:hover,
+:focus {color: white;
+}
+
+.button-one {
 text-align: center;
 cursor: pointer;
+padding: 6px 22px;
+background-color: #2196F3;
+border: 1px solid transparent;
 }
+.button-two {
+  text-align: center;
+  cursor: pointer;
+  width: 128px;
+  border: 1px solid transparent;
+  }
 
-.button-change:hover,
-:focus {color: white;
-background-color: var(--accent-color);
-}
-
-
+.button-four {
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  }
+.button-five {
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  }
+.button-six {
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  }
 /* selector of tag ul and a*/
 ul {
   list-style: none;
@@ -94,13 +135,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.darkFontFirst {
-  background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
 }
 .darkFontSecond {
   background-color: #2f303a;
@@ -112,10 +146,18 @@ a {
 /*section {
   background: #e5e5e5;*/
 }
-
-page-header {
-  background-color: #ececec;
+.page {
+  border: 1px solid black;
 }
+
+/*.page-header {
+ /*background-color: #ececec;*/
+  border: 5px solid black;
+  }*/
+
+  .page-heade {
+    border
+  }
 
 /*section {
   background: #e5e5e5;*/
@@ -131,16 +173,16 @@ page-header {
 }
 
 .container {
-  width: 1600px;
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
-/*h1,
-h3 {
-  text-transform: uppercase;
-}*/
-
-.navlist a {
+.navigation {
+  align-items: center;
+  display: flex;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -148,6 +190,72 @@ h3 {
   line-height: 1.1;
   color: var(--main-colour);
 }
+.navlist {
+display: flex;
+margin-top: 32px;
+margin-bottom: 32px;
+margin-left: 93px;
+width: 294px;
+}
+
+.options {
+display: flex;
+margin-top: 32px;
+margin-bottom: 32px;
+margin-left: 93px;
+width: 294px;
+justify-content: space-between;
+}
+
+.descript{
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  height: 101px;
+}
+
+
+.navlist > .header-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contactlist {
+  display: flex;
+  margin-left: auto;
+}
+
+.email {
+  display: flex;
+  margin-left: auto;
+}
+.email li:not(:last-child) {
+  margin-right: 50px;
+
+}
+
+.options{
+  display: flex;
+  margin-left: 93px;
+  width: 294px;
+  margin-right: 196px;
+}
+
+.options li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link {
+  display: block;
+}
+
+.buttons {
+display: flex;
+margin: auto;
+width: 611px;
+align-items: center;
+}
+
+
 
 .button-first button {
   font-family: Roboto;
@@ -156,13 +264,36 @@ h3 {
   font-size: 16px;
   line-height: 1.8;
   color: var(--button-color);
+  background-color: #2196F3;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 32px;
+  border: 1px solid #2196F3;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.container {
+align-items: center;
+}
+
+
+.container-details{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
 .container-first h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.3;
   color: var(--main-colour);
 }
@@ -175,23 +306,75 @@ h3 {
   color: var(--second-colour);
 }
 
-.container-second h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--main-colour);
+.small-title {
+  margin-bottom: 10px;
 }
 
-.container-third h2 {
+h1 {
+  text-align: center;
+}
+
+.container-activity h2{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   color: var(--main-colour);
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
+  
+.container-pics{
+width: 1170px;
+margin-left:auto ;
+margin-right: auto;
+}
+
+.card-set {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set >.item {
+flex-basis: calc (100%/3 -20px) ;
+margin-left: 20px;
+margin-bottom: 188px;
+}
+
+.container-team{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #F5F4FA;
+}
+.my-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-team > .team-items {
+flex-basis: calc(100%% /4 -30px);
+margin-left: 30px;
+margin-bottom: 94px;
+
+}
+
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-colour);
+  text-align: center;
+}
+
+
 
 .container-third h3 {
   font-family: Roboto;
@@ -209,6 +392,15 @@ h3 {
   font-size: 16px;
   line-height: 1.2;
   color: var(--p-color);
+}
+
+.container-adr{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: #2f303a;
+  mar
 }
 
 .container-adress {
@@ -233,29 +425,37 @@ h3 {
   line-height: 1.2;
 }
 
-.container-buttons li {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--main-colour);
+.container-pictures{
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.container-proj h3 {
+.first-pics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.firs-pics >.last-pics {
+  flex-basis: calc(100%/3 -5px);
+  margin-left: 5px;
+ 
+}
+
+h4 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   color: var(--main-colour);
+  margin: 20px 0 4px 0;
 }
 
-.container-proj p {
+h5 {
   /*font-family: Roboto;*/
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   color: var(--second-colour);
+
 }
